@@ -1,0 +1,8 @@
+<h1>child works!</h1>
+
+<br>
+<div class="container2">
+    <input type="text" placeholder="{{placeholderText}}" #aname/>
+    <button (click)="createAdmin(aname.value)">CREATE</button>
+    <p *ngIf="noadmin" >Total admin:{{noadmin}}</p>
+</div>
